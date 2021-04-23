@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('waw');
+  res.send('bre');
 });
 
 app.listen(process.env.PORT, () =>
