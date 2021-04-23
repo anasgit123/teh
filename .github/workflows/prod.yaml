@@ -45,7 +45,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/abb:latest
+          # tags: ${{ secrets.DOCKER_USERNAME }}/abb:latest
+          repository: anasdockerz/whaaat
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
